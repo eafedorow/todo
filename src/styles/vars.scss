@@ -1,0 +1,25 @@
+@use 'node_modules/@angular/material' as mat;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1160px,
+  hg: 1360px,
+);
+
+// COMMON
+$custom-transition: 0.3s ease-in;
+
+// SIDEBAR
+$sidebar-width: 180px;
+$sidebar-width-collapsed: 40px;
+
+$color-default: mat.get-color-from-palette(mat.$gray-palette, 900);
+$color-light-gray: mat.get-color-from-palette(mat.$gray-palette, 800);
+$color-light: #e6e6e6;
+$color-dark: #000;
+$color-primary: mat.get-color-from-palette(mat.$green-palette, 500);
+$color-active: mat.get-color-from-palette(mat.$green-palette, 700);
+$color-accent: mat.get-color-from-palette(mat.$gray-palette, A200);
+$color-danger: mat.get-color-from-palette(mat.$red-palette, 500);
