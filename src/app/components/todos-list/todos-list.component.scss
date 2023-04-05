@@ -1,0 +1,44 @@
+@import "src/styles/vars";
+
+.todos-list {
+  margin-top: 40px;
+
+  &__inner {
+    background-color: $color-default;
+    border-radius: 12px;
+    padding: 18px 18px;
+  }
+
+  &__title {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: $color-accent;
+    text-transform: uppercase;
+
+    display: flex;
+    align-items: center;
+    width: max-content;
+    transition: $custom-transition;
+    border-radius: 6px;
+    padding: 5px;
+
+    &:hover {
+      background-color: $color-light-gray;
+    }
+  }
+
+  &__title-icon {
+
+  }
+
+  &__todos {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    & + & {
+      margin-left: 20px;
+    }
+  }
+}

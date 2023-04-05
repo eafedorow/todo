@@ -1,0 +1,28 @@
+@import "src/styles/vars";
+
+.todo {
+  background-color: $color-light-gray;
+  border-radius: 8px;
+  padding: 10px 12px;
+  height: 300px;
+  transition: $custom-transition;
+  cursor: pointer;
+  border: 2px solid transparent;
+
+  &:hover {
+    border: 2px solid $color-primary;
+    box-shadow: 0 0 15px 3px rgba(#000, 0.5);
+  }
+
+  &__title {
+    display: inline-block;
+    font-size: 22px;
+    margin-bottom: 20px;
+    line-height: 130%;
+  }
+
+  &__body {
+    opacity: 0.8;
+    line-height: 120%;
+  }
+}

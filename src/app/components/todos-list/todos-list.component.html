@@ -1,0 +1,18 @@
+  <div class="todos-list">
+    <div class="todos-list__inner">
+      <div class="todos-list__title-block">
+        <a class="todos-list__title" routerLink="todos">
+          <span>Заметки</span>
+          <mat-icon class="todos-list__title-icon">keyboard_arrow_right</mat-icon>
+        </a>
+
+        <div class="todos-list__actions"></div>
+      </div>
+
+      <ul class="todos-list__todos">
+        <li class="todos-list__item" *ngFor="let todo of todos">
+          <app-todo-item [todo]="todo"/>
+        </li>
+      </ul>
+    </div>
+  </div>
