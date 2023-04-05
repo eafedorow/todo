@@ -1,0 +1,57 @@
+@import "src/styles/vars";
+
+.aside {
+  position: relative;
+  width: $sidebar-width;
+  height: 100vh;
+  background-color: $color-default;
+  border-right: 1px solid $color-light-gray;
+
+  transition: $custom-transition width;
+
+  &.collapsed {
+    width: $sidebar-width-collapsed;
+
+
+    .aside__collapse-arrow-icon {
+      transform: rotate(180deg);
+    }
+  }
+
+  &:hover {
+    .aside__collapse-arrow {
+      opacity: 0.6;
+      pointer-events: all;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__collapse-arrow {
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    transform: translateX(50%);
+
+    transition: $custom-transition;
+
+    opacity: 0;
+    pointer-events: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__collapse-arrow-icon {
+    transition: $custom-transition;
+  }
+}
