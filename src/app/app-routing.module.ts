@@ -14,6 +14,10 @@ const routes: Routes = [
     title: 'Ваши блокноты',
     component: NotebookPageComponent
   },
+  {
+    path: '**',
+    redirectTo: 'notebook'
+  },
 ];
 
 @NgModule({

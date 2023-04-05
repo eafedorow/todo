@@ -1,5 +1,10 @@
 <aside class="aside" [ngClass]="isSidebarCollapsed ? 'collapsed' : ''">
-  <div class="aside-inner">
+  <div class="aside__inner">
+    <div class="aside__user">
+      <div class="aside__user-img-block">
+        <img class="aside__user-img" [src]="userImgSrc" alt="">
+      </div>
+    </div>
     <div class="aside__collapse-arrow" (click)="collapseSidebar()">
       <mat-icon class="aside__collapse-arrow-icon">keyboard_arrow_left</mat-icon>
     </div>

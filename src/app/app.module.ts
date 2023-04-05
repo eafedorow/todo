@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +11,8 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { FooterComponent } from './components/footer/footer.component';
 
 import { MatIconModule } from "@angular/material/icon";
+import { TodosListComponent } from './components/todos-list/todos-list.component';
+import { TodoItemComponent } from './components/todo-item/todo-item.component';
 
 @NgModule({
   declarations: [
@@ -18,12 +21,15 @@ import { MatIconModule } from "@angular/material/icon";
     NotebookPageComponent,
     HeaderComponent,
     SidebarComponent,
-    FooterComponent
+    FooterComponent,
+    TodosListComponent,
+    TodoItemComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatIconModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

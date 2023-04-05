@@ -12,6 +12,10 @@
   &.collapsed {
     width: $sidebar-width-collapsed;
 
+    .aside__user-img-block {
+      width: 40px;
+      height: 40px;
+    }
 
     .aside__collapse-arrow-icon {
       transform: rotate(180deg);
@@ -28,6 +32,41 @@
       }
     }
   }
+
+  &__inner {
+    padding: 10px 10px;
+    height: 100%;
+  }
+
+  &__user-img-block {
+    width: 120px;
+    height: 120px;
+    border-radius: 12px;
+    margin: 0 auto;
+    border: 2px solid $color-light-gray;
+    background-color: $color-accent;
+    opacity: 0.8;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: $custom-transition;
+    cursor: pointer;
+
+    &:hover {
+      border-color: $color-primary;
+      opacity: 1;
+    }
+  }
+
+  &__user-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: $custom-transition;
+    border-radius: 12px;
+  }
+
 
   &__collapse-arrow {
     position: absolute;
