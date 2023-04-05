@@ -6,7 +6,24 @@
           <mat-icon class="todos-list__title-icon">keyboard_arrow_right</mat-icon>
         </a>
 
-        <div class="todos-list__actions"></div>
+        <div class="todos-list__actions">
+          <button class="todos-list__more-actions" mat-icon-button color="primary" aria-label="Example icon button with a home icon">
+            <mat-icon class="todos-list__add-new-todo">add_box</mat-icon>
+          </button>
+          <button mat-icon-button [matMenuTriggerFor]="actionMenu" aria-label="Example icon-button with a menu">
+            <mat-icon >more_horiz</mat-icon>
+          </button>
+          <mat-menu #actionMenu="matMenu">
+            <button mat-menu-item>
+              <mat-icon>add</mat-icon>
+              <span>Создать новую заметку</span>
+            </button>
+            <button mat-menu-item>
+              <mat-icon> list_alt</mat-icon>
+              <span>Перейти ко всем заметкам</span>
+            </button>
+          </mat-menu>
+        </div>
       </div>
 
       <ul class="todos-list__todos">

@@ -8,9 +8,15 @@
     padding: 18px 18px;
   }
 
+  &__title-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
   &__title {
     font-size: 20px;
-    margin-bottom: 15px;
     color: $color-accent;
     text-transform: uppercase;
 
@@ -26,16 +32,21 @@
     }
   }
 
-  &__title-icon {
+  &__add-new-todo {
+    margin-right: 10px;
 
+    &:hover {
+      fill: $color-primary;
+    }
   }
+
 
   &__todos {
     display: flex;
     align-items: center;
   }
-
   &__item {
+
     & + & {
       margin-left: 20px;
     }

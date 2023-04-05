@@ -11,8 +11,11 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { FooterComponent } from './components/footer/footer.component';
 
 import { MatIconModule } from "@angular/material/icon";
+import { MatMenuModule } from "@angular/material/menu";
+
 import { TodosListComponent } from './components/todos-list/todos-list.component';
 import { TodoItemComponent } from './components/todo-item/todo-item.component';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
@@ -26,10 +29,12 @@ import { TodoItemComponent } from './components/todo-item/todo-item.component';
     TodoItemComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule,
-    MatIconModule,
-    HttpClientModule
+      BrowserModule,
+      AppRoutingModule,
+      MatIconModule,
+      HttpClientModule,
+      MatMenuModule,
+      BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

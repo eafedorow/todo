@@ -27,6 +27,10 @@ $todo-theme: mat.define-light-theme((
   )
 ));
 
+.cdk-global-overlay-wrapper, .cdk-overlay-container {
+  z-index: 99999 !important;
+}
+
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
