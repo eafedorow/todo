@@ -11,9 +11,11 @@ $container-max-widths: (
 // COMMON
 $custom-transition: 0.2s ease-in;
 
-// SIDEBAR
+// SIZE
 $sidebar-width: 260px;
 $sidebar-width-collapsed: 60px;
+
+$header-height: 40px;
 
 $color-default: mat.get-color-from-palette(mat.$gray-palette, 900);
 $color-light-gray: mat.get-color-from-palette(mat.$gray-palette, 800);

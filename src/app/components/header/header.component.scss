@@ -1,0 +1,22 @@
+@import "src/styles/vars";
+
+.header {
+  background-color: $color-light-gray;
+  height: $header-height;
+
+  &__inner {
+    padding: 20px 20px 0;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__greetings {
+    font-size: 18px;
+  }
+
+  &__status {
+    font-size: 18px;
+  }
+}
