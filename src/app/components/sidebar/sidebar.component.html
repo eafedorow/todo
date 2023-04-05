@@ -5,6 +5,63 @@
         <img class="aside__user-img" [src]="userImgSrc" alt="">
       </div>
     </div>
+
+    <nav class="aside__nav">
+      <a class="aside__nav-link"
+         routerLink=""
+         [matTooltip]="isSidebarCollapsed ? 'Главная' : ''"
+         matTooltipPosition="right"
+      >
+        <mat-icon>home</mat-icon>
+        <span>Главная</span>
+      </a>
+      <a
+        class="aside__nav-link"
+        routerLink="todos"
+        [matTooltip]="isSidebarCollapsed ? 'Избранное' : ''"
+        matTooltipPosition="right"
+      >
+        <mat-icon>favorite</mat-icon>
+        <span>Избранное</span>
+      </a>
+      <a
+        class="aside__nav-link"
+        routerLink="todos"
+        [matTooltip]="isSidebarCollapsed ? 'Заметки' : ''"
+        matTooltipPosition="right"
+      >
+        <mat-icon> notes</mat-icon>
+        <span>Заметки</span>
+      </a>
+      <a
+        class="aside__nav-link"
+        routerLink="notebook"
+        [matTooltip]="isSidebarCollapsed ? 'Блокноты' : ''"
+        matTooltipPosition="right"
+      >
+        <mat-icon>book</mat-icon>
+        <span>Блокноты</span>
+      </a>
+      <a
+        class="aside__nav-link"
+        routerLink="notebook"
+        [matTooltip]="isSidebarCollapsed ? 'Настройки' : ''"
+        matTooltipPosition="right"
+      >
+        <mat-icon>settings</mat-icon>
+        <span>Настройки</span>
+      </a>
+    </nav>
+
+    <button
+      class="aside__help"
+      [matTooltip]="isSidebarCollapsed ? 'Возникли вопросы?' : ''"
+      matTooltipPosition="right"
+    >
+      <mat-icon>help_outline</mat-icon>
+      <span>Возникли вопросы?</span>
+    </button>
+
     <div class="aside__collapse-arrow" (click)="collapseSidebar()">
       <mat-icon class="aside__collapse-arrow-icon">keyboard_arrow_left</mat-icon>
     </div>

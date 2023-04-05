@@ -13,8 +13,8 @@ export class SidebarComponent implements OnInit{
   }
 
   ngOnInit(): void {
-    // this.userImgSrc = `https://robohash.org/Todo%20app%20user${Math.floor(Math.random() * (1000 - 0)) + 0}` || ''
-    this.userImgSrc = ''
+    this.userImgSrc = `https://robohash.org/Todo%20app%20user${Math.floor(Math.random() * 1000)}` || ''
+    // this.userImgSrc = ''
   }
 
 }
