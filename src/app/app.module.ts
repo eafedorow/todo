@@ -18,6 +18,7 @@ import { MatButtonModule } from "@angular/material/button";
 
 import { TodosListComponent } from './components/todos-list/todos-list.component';
 import { TodoItemComponent } from './components/todo-item/todo-item.component';
+import { TodoComponent } from './pages/todo/todo.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { TodoItemComponent } from './components/todo-item/todo-item.component';
     SidebarComponent,
     FooterComponent,
     TodosListComponent,
-    TodoItemComponent
+    TodoItemComponent,
+    TodoComponent
   ],
   imports: [
     BrowserModule,

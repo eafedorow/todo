@@ -63,6 +63,20 @@
     height: 100%;
   }
 
+  &__user {
+    cursor: pointer;
+
+    &:hover {
+      .aside__user-img-block {
+        border-color: $color-primary;
+        opacity: 1;
+      }
+      .aside__username {
+        color: $color-primary;
+      }
+    }
+  }
+
   &__user-img-block {
     width: 220px;
     height: 220px;
@@ -76,12 +90,6 @@
     align-items: center;
     justify-content: center;
     transition: $custom-transition;
-    cursor: pointer;
-
-    &:hover {
-      border-color: $color-primary;
-      opacity: 1;
-    }
   }
 
   &__user-img {
@@ -90,6 +98,14 @@
     object-fit: contain;
     transition: $custom-transition;
     border-radius: 12px;
+  }
+
+  &__username {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+    transition: $custom-transition;
   }
 
   &__nav {
