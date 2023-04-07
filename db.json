@@ -21,5 +21,37 @@
       "name": "Евгений",
       "surname": "Фёдоров"
     }
+  ],
+  "notes": [
+    {
+      "noteId": "1",
+      "userId": "1",
+      "title": "My first note",
+      "body": "Here we go, that my first note and incredibly happy with that. You know man"
+    },
+    {
+      "noteId": "2",
+      "userId": "1",
+      "title": "My second note",
+      "body": "Here we go, that my first note and very happy with that. You know man"
+    },
+    {
+      "noteId": "3",
+      "userId": "1",
+      "title": "My first note",
+      "body": "Here we go, that my first note and incredibly happy with that. You know man"
+    },
+    {
+      "noteId": "4",
+      "userId": "1",
+      "title": "My first note",
+      "body": "Here we go, that my first note and incredibly happy with that. You know man"
+    },
+    {
+      "noteId": "5",
+      "userId": "1",
+      "title": "My first note",
+      "body": "Here we go, that my first note and incredibly happy with that. You know man"
+    }
   ]
 }

@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Todo } from "src/app/model/todo.model";
+import {NoteModel} from "../../model/note.model";
 
 @Component({
   selector: 'app-todo-item',
@@ -7,5 +7,5 @@ import { Todo } from "src/app/model/todo.model";
   styleUrls: ['./todo-item.component.scss']
 })
 export class TodoItemComponent  {
-  @Input() todo: Todo
+  @Input() todo: NoteModel
 }

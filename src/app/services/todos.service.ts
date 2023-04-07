@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
+import {Observable} from "rxjs";
+import {NoteModel} from "../model/note.model";
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +12,11 @@ export class TodosService {
     private http: HttpClient
   ) { }
 
-  getTodos() {
-    return this.http.get('https://jsonplaceholder.typicode.com/posts?id=0&id=1&id=2&id=3&id=4&id=5')
+  getTodos(): Observable<NoteModel[]> {
+    return this.http.get<NoteModel[]>('http://localhost:3000/notes')
+  }
+
+  getSingleNote(todoId: string): Observable<NoteModel[]> {
+    return this.http.get<NoteModel[]>(`http://localhost:3000/notes?noteId=${todoId}`)
   }
 }
