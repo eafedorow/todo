@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http'
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { NgxsModule } from '@ngxs/store';
 
 import { MatIconModule } from "@angular/material/icon";
 import { MatMenuModule } from "@angular/material/menu";
@@ -20,6 +21,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { MainPageComponent } from './pages/main-page/main-page.component';
 import { NotebookPageComponent } from './pages/notebook-page/notebook-page.component';
 import { NotePageComponent } from './pages/note-page/note-page.component';
+import { UserLinkComponent } from './components/user-link/user-link.component';
 
 
 
@@ -33,11 +35,13 @@ import { NotePageComponent } from './pages/note-page/note-page.component';
     FooterComponent,
     TodosListComponent,
     TodoItemComponent,
-    NotePageComponent
+    NotePageComponent,
+    UserLinkComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    NgxsModule,
     MatIconModule,
     HttpClientModule,
     MatMenuModule,

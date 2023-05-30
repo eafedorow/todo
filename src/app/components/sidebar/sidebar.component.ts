@@ -6,9 +6,6 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./sidebar.component.scss'],
 })
 export class SidebarComponent implements OnInit{
-  userImgSrc: string = ''
-  username: string = 'Evgenii';
-  surname: string = 'Fedorov';
 
   @Input() isSidebarCollapsed = false;
   collapseSidebar() {
@@ -16,8 +13,6 @@ export class SidebarComponent implements OnInit{
   }
 
   ngOnInit(): void {
-    this.userImgSrc = `https://robohash.org/Todo%20app%20user${Math.floor(Math.random() * 1000)}` || ''
-    // this.userImgSrc = ''
   }
 
 }

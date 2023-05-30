@@ -1,17 +1,6 @@
 <aside class="aside" [ngClass]="isSidebarCollapsed ? 'collapsed' : ''">
   <div class="aside__inner">
-    <div class="aside__user">
-      <div class="aside__user-img-block">
-        <img class="aside__user-img" [src]="userImgSrc" alt="">
-      </div>
-
-      <span class="aside__username" *ngIf="this.isSidebarCollapsed">
-          {{ this.username | slice: 0:1 }}.{{ this.surname | slice: 0:1 }}.
-      </span>
-      <span class="aside__username" *ngIf="!this.isSidebarCollapsed">
-          {{ this.username }} {{ this.surname }}
-      </span>
-    </div>
+    <app-user-link />
 
     <nav class="aside__nav">
       <a class="aside__nav-link"
