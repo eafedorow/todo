@@ -58,7 +58,10 @@
       <span>Возникли вопросы?</span>
     </button>
 
-    <div class="aside__collapse-arrow" (click)="collapseSidebar()">
+    <div
+      (click)="this.toggleSidebar()"
+      class="aside__collapse-arrow"
+    >
       <mat-icon class="aside__collapse-arrow-icon">keyboard_arrow_left</mat-icon>
     </div>
   </div>

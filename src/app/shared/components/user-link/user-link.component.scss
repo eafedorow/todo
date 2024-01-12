@@ -1,0 +1,70 @@
+@import "styles/vars";
+
+.user-link {
+
+  &__user-block {
+    cursor: pointer;
+
+    &:hover {
+      .user-link__user-img-block {
+        border-color: $color-primary;
+        opacity: 1;
+      }
+      .user-link__username {
+        color: $color-primary;
+      }
+    }
+  }
+
+  &__user-img-block {
+    width: 220px;
+    height: 220px;
+    border-radius: 12px;
+    margin: 0 auto;
+    border: 2px solid $color-light-gray;
+    background-color: $color-accent;
+    opacity: 0.8;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: $custom-transition;
+
+    &.collapsed {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &__user-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: $custom-transition;
+    border-radius: 12px;
+  }
+
+  &__username {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+    transition: $custom-transition;
+
+    &.shrink-in {
+      animation-name: shrink-in;
+      animation-duration: 500ms;
+    }
+  }
+
+  @keyframes shrink-in {
+    0% {
+      width: 0;
+      opacity: 0;
+    }
+    100% {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-
+@import 'vars';
 *,
 *::before,
 *::after {
@@ -38,7 +38,6 @@ body {
 .page-container {
   max-width: 100%;
   height: calc(100% - $header-height);
-
 
   padding: 0 20px 20px;
 }

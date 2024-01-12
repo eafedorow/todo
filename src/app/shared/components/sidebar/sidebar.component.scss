@@ -1,21 +1,17 @@
-@import "src/styles/vars";
+@use "styles/vars";
 
 .aside {
   position: relative;
-  width: $sidebar-width;
+  width: vars.$sidebar-width;
   height: 100vh;
   background: rgb(0,0,0);
   background: linear-gradient(0deg, rgba(0,0,0,1) 25%, rgba(33,33,33,1) 61%, rgba(33,33,33,1) 96%, rgba(76,175,80,1) 100%);
-  border-right: 1px solid $color-light-gray;
+  border-right: 1px solid vars.$color-light-gray;
 
-  transition: $custom-transition width;
+  transition: vars.$custom-transition width;
 
   &.collapsed {
-    width: $sidebar-width-collapsed;
-    .aside__user-img-block {
-      width: 40px;
-      height: 40px;
-    }
+    width: vars.$sidebar-width-collapsed;
 
     .aside__collapse-arrow-icon {
       transform: rotate(180deg);
@@ -63,51 +59,6 @@
     height: 100%;
   }
 
-  &__user {
-    cursor: pointer;
-
-    &:hover {
-      .aside__user-img-block {
-        border-color: $color-primary;
-        opacity: 1;
-      }
-      .aside__username {
-        color: $color-primary;
-      }
-    }
-  }
-
-  &__user-img-block {
-    width: 220px;
-    height: 220px;
-    border-radius: 12px;
-    margin: 0 auto;
-    border: 2px solid $color-light-gray;
-    background-color: $color-accent;
-    opacity: 0.8;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: $custom-transition;
-  }
-
-  &__user-img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    transition: $custom-transition;
-    border-radius: 12px;
-  }
-
-  &__username {
-    display: inline-flex;
-    width: 100%;
-    justify-content: center;
-    margin-top: 10px;
-    transition: $custom-transition;
-  }
-
   &__nav {
     display: flex;
     flex-direction: column;
@@ -118,14 +69,14 @@
   &__nav-link {
     display: flex;
     align-items: center;
-    transition: $custom-transition;
+    transition: vars.$custom-transition;
     cursor: pointer;
     width: 100%;
     padding: 8px;
     border-radius: 5px;
 
     &:hover {
-      background-color: $color-light-gray;
+      background-color: vars.$color-light-gray;
     }
 
     & + & {
@@ -134,11 +85,11 @@
 
     mat-icon {
       margin-right: 10px;
-      transition: $custom-transition;
+      transition: vars.$custom-transition;
     }
 
     span {
-      transition: $custom-transition;
+      transition: vars.$custom-transition;
     }
   }
 
@@ -146,10 +97,10 @@
     position: absolute;
     bottom: 10px;
     width: calc(100% - 30px);
-    background-color: $color-primary;
+    background-color: vars.$color-primary;
     border-radius: 8px;
-    color: $color-default;
-    transition: $custom-transition;
+    color: vars.$color-default;
+    transition: vars.$custom-transition;
     padding: 10px;
 
     display: flex;
@@ -161,19 +112,19 @@
       margin-right: 8px;
       width: 24px;
       height: 24px;
-      transition: $custom-transition;
+      transition: vars.$custom-transition;
     }
 
     span {
-      transition: $custom-transition;
+      transition: vars.$custom-transition;
     }
 
     &:hover {
       span {
-        color: $color-accent;
+        color: vars.$color-accent;
       }
       mat-icon {
-        color: $color-accent;
+        color: vars.$color-accent;
       }
     }
   }
@@ -187,7 +138,7 @@
     background-color: #000;
     transform: translateX(50%);
 
-    transition: $custom-transition;
+    transition: vars.$custom-transition;
 
     opacity: 0;
     pointer-events: none;
@@ -201,6 +152,6 @@
   }
 
   &__collapse-arrow-icon {
-    transition: $custom-transition;
+    transition: vars.$custom-transition;
   }
 }

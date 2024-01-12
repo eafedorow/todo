@@ -13,10 +13,10 @@ export class TodosService {
   ) { }
 
   getTodos(): Observable<NoteModel[]> {
-    return this.http.get<NoteModel[]>('http://localhost:3000/notes')
+    return this.http.get<NoteModel[]>('http://localhost:8000/notes')
   }
 
   getSingleNote(todoId: string): Observable<NoteModel[]> {
-    return this.http.get<NoteModel[]>(`http://localhost:3000/notes?noteId=${todoId}`)
+    return this.http.get<NoteModel[]>(`http://localhost:8000/notes?noteId=${todoId}`)
   }
 }

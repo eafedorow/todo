@@ -1,4 +1,4 @@
-@import "src/styles/vars";
+@use 'styles/vars' as *;
 
 .header {
   background-color: transparent;

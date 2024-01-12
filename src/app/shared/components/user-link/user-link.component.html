@@ -1,0 +1,14 @@
+<div class="user-link__user-block">
+  <div
+    class="user-link__user-img-block"
+    [class.collapsed]="(this.isSidebarCollapsed$ | async)"
+  >
+    <img class="user-link__user-img" [src]="userImgSrc" alt="">
+  </div>
+</div>
+<span class="user-link__username" *ngIf="(this.isSidebarCollapsed$ | async)">
+      {{ this.username | slice: 0:1 }}.{{ this.surname | slice: 0:1 }}.
+  </span>
+<span class="user-link__username shrink-in" *ngIf="!(this.isSidebarCollapsed$ | async)">
+      {{ this.username }} {{ this.surname }}
+</span>

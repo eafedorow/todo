@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { TodosService } from "../../services/todos.service";
-import {NoteModel} from "../../model/note.model";
+import { TodosService } from "../../../services/todos.service";
+import { NoteModel } from "../../../model/note.model";
 
 @Component({
   selector: 'app-todos-list',
@@ -11,7 +11,7 @@ export class TodosListComponent implements OnInit {
   todos: NoteModel[] = [];
 
   constructor(
-    private todosService: TodosService
+    private todosService: TodosService,
   ) {
   }
 

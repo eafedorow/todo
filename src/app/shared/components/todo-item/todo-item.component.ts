@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import {NoteModel} from "../../model/note.model";
+import { NoteModel } from "../../../model/note.model";
 
 @Component({
   selector: 'app-todo-item',
