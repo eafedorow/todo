@@ -1,9 +1,9 @@
-@import "./styles/vars";
+@use "src/styles/vars" as vars;
 
 .todos-list {
 
   &__inner {
-    background-color: $color-default;
+    background-color: vars.$color-default;
     border-radius: 12px;
     padding: 18px 18px;
   }
@@ -17,18 +17,18 @@
 
   &__title {
     font-size: 20px;
-    color: $color-accent;
+    color: vars.$color-accent;
     text-transform: uppercase;
 
     display: flex;
     align-items: center;
     width: max-content;
-    transition: $custom-transition;
+    transition: vars.$custom-transition;
     border-radius: 6px;
     padding: 5px;
 
     &:hover {
-      background-color: $color-light-gray;
+      background-color: vars.$color-light-gray;
     }
   }
 
@@ -36,7 +36,7 @@
     margin-right: 10px;
 
     &:hover {
-      fill: $color-primary;
+      fill: vars.$color-primary;
     }
   }
 

@@ -1,15 +1,15 @@
-@import "styles/vars";
+@use "src/styles/vars" as vars;
 .todo {
-  background-color: $color-light-gray;
+  background-color: vars.$color-light-gray;
   border-radius: 8px;
   padding: 10px 12px;
   height: 300px;
-  transition: $custom-transition;
+  transition: vars.$custom-transition;
   cursor: pointer;
   border: 2px solid transparent;
 
   &:hover {
-    border: 2px solid $color-primary;
+    border: 2px solid vars.$color-primary;
     box-shadow: 0 0 15px 3px rgba(#000, 0.5);
   }
 

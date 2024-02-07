@@ -1,4 +1,4 @@
-@import "styles/vars";
+@use "src/styles/vars" as vars;
 
 .user-link {
 
@@ -7,11 +7,11 @@
 
     &:hover {
       .user-link__user-img-block {
-        border-color: $color-primary;
+        border-color: vars.$color-primary;
         opacity: 1;
       }
       .user-link__username {
-        color: $color-primary;
+        color: vars.$color-primary;
       }
     }
   }
@@ -21,14 +21,14 @@
     height: 220px;
     border-radius: 12px;
     margin: 0 auto;
-    border: 2px solid $color-light-gray;
-    background-color: $color-accent;
+    border: 2px solid vars.$color-light-gray;
+    background-color: vars.$color-accent;
     opacity: 0.8;
 
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: $custom-transition;
+    transition: vars.$custom-transition;
 
     &.collapsed {
       width: 40px;
@@ -40,7 +40,7 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
-    transition: $custom-transition;
+    transition: vars.$custom-transition;
     border-radius: 12px;
   }
 
@@ -49,7 +49,7 @@
     width: 100%;
     justify-content: center;
     margin-top: 10px;
-    transition: $custom-transition;
+    transition: vars.$custom-transition;
 
     &.shrink-in {
       animation-name: shrink-in;

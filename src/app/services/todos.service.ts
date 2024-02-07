@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from "@angular/common/http";
+import {HttpClient, HttpHeaders} from "@angular/common/http";
 import {Observable} from "rxjs";
 import {NoteModel} from "../model/note.model";
 
@@ -13,7 +13,7 @@ export class TodosService {
   ) { }
 
   getTodos(): Observable<NoteModel[]> {
-    return this.http.get<NoteModel[]>('http://localhost:8000/notes')
+    return this.http.get<NoteModel[]>('http://localhost:8000/notes', { headers: new HttpHeaders().set('authorization', '123') })
   }
 
   getSingleNote(todoId: string): Observable<NoteModel[]> {

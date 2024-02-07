@@ -1,4 +1,4 @@
-@use "styles/vars";
+@use "src/styles/vars" as vars;
 
 .aside {
   position: relative;
@@ -8,7 +8,7 @@
   background: linear-gradient(0deg, rgba(0,0,0,1) 25%, rgba(33,33,33,1) 61%, rgba(33,33,33,1) 96%, rgba(76,175,80,1) 100%);
   border-right: 1px solid vars.$color-light-gray;
 
-  transition: vars.$custom-transition width;
+  transition: vars.$custom-transition;
 
   &.collapsed {
     width: vars.$sidebar-width-collapsed;
