@@ -1,0 +1,27 @@
+@use 'src/styles/vars' as vars;
+
+.auth-page{
+  display: flex;
+  justify-content: center;
+
+  &__card {
+    max-width: 720px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  &__card-title-block {
+    margin-bottom: 20px;
+  }
+
+  &__card-title {
+    font-size: 28px;
+    color: vars.$color-default;
+  }
+
+  &__content {
+    display: grid;
+    row-gap: 20px;
+    width: 100%;
+  }
+}

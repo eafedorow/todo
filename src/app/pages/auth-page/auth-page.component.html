@@ -1,1 +1,81 @@
-<p>auth-page works!</p>
+<div class="container auth-page">
+  <mat-tab-group backgroundColor="primary" color="accent">
+    <mat-tab label="Авторизация">
+      <mat-card class="auth-page__card">
+        <mat-card-header class="auth-page__card-title-block">
+          <mat-card-title class="auth-page__card-title">
+            Авторизация
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="auth-page__content">
+
+          <mat-form-field>
+            <mat-label>
+              Логин
+            </mat-label>
+            <input
+              matInput
+              type="text"
+            >
+          </mat-form-field>
+
+          <mat-form-field>
+            <mat-label>
+              Пароль
+            </mat-label>
+            <input
+              matInput
+              type="text"
+            >
+          </mat-form-field>
+          <mat-divider></mat-divider>
+        </mat-card-content>
+        <mat-card-actions align="end">
+          <button mat-button>Авторизоваться</button>
+        </mat-card-actions>
+        <mat-card-footer>
+          <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+        </mat-card-footer>
+      </mat-card>
+    </mat-tab>
+    <mat-tab label="Регистрация">
+      <mat-card class="auth-page__card">
+        <mat-card-header class="auth-page__card-title-block">
+          <mat-card-title class="auth-page__card-title">
+            Регистрация
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="auth-page__content">
+
+          <mat-form-field>
+            <mat-label>
+              Логин
+            </mat-label>
+            <input
+              matInput
+              type="text"
+            >
+          </mat-form-field>
+
+          <mat-form-field>
+            <mat-label>
+              Пароль
+            </mat-label>
+            <input
+              matInput
+              type="text"
+            >
+          </mat-form-field>
+          <mat-divider></mat-divider>
+        </mat-card-content>
+        <mat-card-actions align="end">
+          <button mat-button>Зарегистрироваться</button>
+        </mat-card-actions>
+        <mat-card-footer>
+          <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+        </mat-card-footer>
+      </mat-card>
+    </mat-tab>
+  </mat-tab-group>
+</div>
+
