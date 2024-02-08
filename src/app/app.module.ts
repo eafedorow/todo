@@ -19,7 +19,7 @@ import { MainPageModule } from "./pages/main-page/main-page.module";
   declarations: [
     AppComponent,
     NotebookPageComponent,
-    NotePageComponent,
+    NotePageComponent
   ],
   imports: [
     AppRoutingModule,
