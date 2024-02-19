@@ -14,12 +14,14 @@ import { NotePageComponent } from './pages/note-page/note-page.component';
 import { ReactiveFormsModule } from "@angular/forms";
 import { SharedModule } from "./shared";
 import { MainPageModule } from "./pages/main-page/main-page.module";
+import { ProfilePageComponent } from './pages/profile-page/profile-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NotebookPageComponent,
-    NotePageComponent
+    NotePageComponent,
+    ProfilePageComponent
   ],
   imports: [
     AppRoutingModule,

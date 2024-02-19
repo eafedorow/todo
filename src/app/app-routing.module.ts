@@ -5,6 +5,7 @@ import { NotePageComponent } from "./pages/note-page/note-page.component";
 import { MainPageComponent } from "./pages/main-page/main-page.component";
 import { AuthPageComponent } from "./pages/auth-page/auth-page.component";
 import { AuthGuard } from "./guards/auth.guard";
+import {ProfilePageComponent} from "./pages/profile-page/profile-page.component";
 
 const routes: Routes = [
   {
@@ -30,6 +31,12 @@ const routes: Routes = [
     component: NotebookPageComponent,
     canActivate: [AuthGuard]
   },
+  {
+  path: 'profile',
+  title: 'Ваши профиль',
+  component: ProfilePageComponent,
+  canActivate: [AuthGuard]
+},
   {
     path: '**',
     redirectTo: 'notebook'

@@ -3,7 +3,9 @@
     class="user-link__user-img-block"
     [class.collapsed]="(this.isSidebarCollapsed$ | async)"
   >
+    <a routerLink="/profile">
     <img class="user-link__user-img" [src]="userImgSrc" alt="">
+  </a>
   </div>
 </div>
 <span class="user-link__username" *ngIf="(this.isSidebarCollapsed$ | async)">
